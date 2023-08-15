@@ -1,2 +1,2 @@
 # ShoeWarma
-Shoe Store WebSite Project Used MVC Design
+Shoe Store WebSite Project Used MVC Design.
