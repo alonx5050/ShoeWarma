@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="iconContainer">
+        <a href="Homepage.html" class="home"><i class="material-icons">home</i></a>
+        <a href="Login.html" class="login"><i class="material-icons">account_circle</i></a>
+        <a href="Bag.html" class="bag"><i class="material-icons">shopping_cart</i></a>
+    </div>
+    <br>
+    <br>
+    <div class="headersContainer">
+        <h1>Welcome to ShoeWarma</h1>
+        <h2>Israeli shoe store</h2>
+    </div>
+    </header>
+    <br>
+    <br>
+    <nav class="navigationContainer">
+        <!-- Navigation -->
+        <ul>
+            <li><a href="Women.html">Women</a></li>
+            <li><a href="Men.html">Men</a></li>
+            <li><a href="Kids.html">Kids</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="subscribe"><a href="Subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1>Statistical Data</h1>
+    <br>
+    <br>
+    <div class="graphs-wrapper">
+        <div class="graph-container">
+            <h4>Sales by color</h4>
+            <canvas id="colorGraph"></canvas>
+        </div>
+
+        <div class="graph-container">
+            <h4>Sales by brand</h4>
+            <canvas id="typeGraph"></canvas>
+        </div>
+    </div>
+
+    <script>
+        var colorData = {
+            labels: ['Red', 'Blue', 'Green', 'Yellow'],
+            datasets: [{
+                data: [25, 30, 20, 15],
+                backgroundColor: ['#EC120F', '#3366FF', '#0FE34C ', '#FFC300']
+            }]
+        };
+
+        var typeData = {
+            labels: ['Nike', 'Adidas', 'New Balanca', 'Puma'],
+            datasets: [{
+                data: [40, 25, 15, 20],
+                backgroundColor: ['#030805', '#C7EA02', '#C8C2BC ', '#F98203']
+            }]
+        };
+
+        var options = {
+            responsive: true,
+            maintainAspectRatio: false
+        };
+
+        var colorGraph = new Chart(document.getElementById('colorGraph').getContext('2d'), {
+            type: 'doughnut',
+            data: colorData,
+            options: options
+        });
+
+        var typeGraph = new Chart(document.getElementById('typeGraph').getContext('2d'), {
+            type: 'doughnut',
+            data: typeData,
+            options: options
+        });
+    </script>
+    <br>
+    <br>
+    <div class="orders-history">
+        <h1>Orders History</h1>
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <!-- Footer -->
+        <div class="footerContainer">
+            <section class="about">
+                <header>
+                    <h3>About</h3>
+                </header>
+                <br>
+                <p><i>ShoeWarma is an online shoe store.<br>Our vision is top quality service at affordable
+                        prices.<br>"The price is cheap and the customer is expensive..."</i></p>
+            </section>
+            <section id="followUs">
+                <header>
+                    <h3>Follow Us</h3>
+                </header>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://www.Instagram.com/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
