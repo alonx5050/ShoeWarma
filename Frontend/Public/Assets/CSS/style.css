@@ -18,12 +18,12 @@ body{
 .material-icons{
     font-size: 40px;
     text-decoration: none;
-    color: rgb(33, 32, 32);
+    color: wheat;
     margin: 30px 40px
 }
 
 .material-icons:hover{
-    color: rgb(151, 151, 151);
+    color: white;
 }
 
 .homeIcon{
@@ -171,6 +171,8 @@ footer >div{
 
 body{
     background-image: url(../Images/what-are-the-best-nike-basketball-shoes.jpg) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size:100%;
 }
 
@@ -178,14 +180,11 @@ body{
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 input{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-::placeholder{
-    color: white !important; 
-}
-
-*{
-    color: white !important;
-}
