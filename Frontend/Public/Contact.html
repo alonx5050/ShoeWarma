@@ -43,68 +43,81 @@
 		</ul>
 	</nav>
 
-	<section class="mainContentContainer">
+		<section class="mainContentContainer">
 		<!-- Main content area -->
 		<div class="filtersContainer">
 
 			<div class="districtFilter">
 				<h2>District</h2>
-				<select name="branchName" value="0">
-					<option value="0">Center</option>
-					<option value="1">Tel Aviv</option>
-					<option value="2">North</option>
-					<option value="3">South</option>
-					<option value="4">Jerusalem</option>
-					<option value="5">Haifa</option>
+				<select name="branchDistrict" value="none">
+					<option value="none">---</option>
+					<option value="Center">Center</option>
+					<option value="Tel Aviv">Tel Aviv</option>
+					<option value="North">North</option>
+					<option value="South">South</option>
+					<option value="Jerusalem">Jerusalem</option>
+                    <option value="Haifa">Haifa</option>
 				</select>
 			</div>
 
 			<div class="settlementFilter">
 				<h2>Settlement</h2>
-				<select name="branchName" value="0">
-					<option value="1">Tel Aviv</option>
-					<option value="2">Jerusalem</option>
-					<option value="3">Haifa</option>
-					<option value="4">Petah tikva</option>
-					<option value="5">Herzliya</option>
-					<option value="3">Rishon lezion</option>
-					<option value="4">Kfar sava</option>
-					<option value="5">Tiberias</option>
-					<option value="5">Eilat</option>
+				<select name="branchSettlement" value="none">
+					<option value="none">---</option>
+					<option value="Tel Aviv-Yafo">Tel Aviv-Yafo</option>
+					<option value="Jerusalem">Jerusalem</option>
+					<option value="Haifa">Haifa</option>
+					<option value="Petah Tikva">Petah Tikva</option>
+					<option value="Rishon Lezion">Rishon Lezion</option>
+					<option value="Kfar Sava">Kfar Sava</option>
+                    <option value="Be'er Sheva">Be'er Sheva</option>
+					<option value="Metula">Metula</option>
+					<option value="Eilat">Eilat</option>
 				</select>
 			</div>
 
 			<div class="branchFilter">
 				<h2>Branch Name</h2>
-				<select name="branchName" value="0">
-					<option value="0">carlebach 26</option>
-					<option value="1">Dizengoff 13</option>
-					<option value="2">Zabotinsky 5</option>
-					<option value="3">Lishansky 44</option>
-					<option value="4">Sokolov 7</option>
-					<option value="5">Herzl 112</option>
-					<option value="6">Begin 65</option>
-					<option value="7">Bialik 78</option>
-					<option value="8">Rothschild 22</option>
-					<option value="9">Sheinkin 93</option>
-					<option value="10">Alenbi 81</option>
-					<option value="11">Bograshov 211</option>
-					<option value="12">Ussishkin 52</option>
-					<option value="13">Ben yehuda 34</option>
+				<select name="branchName" value="none">
+					<option value="none">---</option>
+					<option value="Hakura 12">Hakura 12</option><!--Metula-->
+					<option value="Kiryat Sefer 60">Kiryat Sefer 60</option><!--Haifa-->
+					<option value="Dizengoff 99">Dizengoff 99</option><!--Tel Aviv-Yafo-->
+					<option value="Lishansky 44">Lishansky 44</option><!--Be'er Sheva-->
+					<option value="Megido 28">Megido 28</option><!--Be'er Sheva-->
+					<option value="Sokolov 65">Sokolov 65</option><!--Kfar Sava-->
+					<option value="Imber 32">Imber 32</option><!--Kfar Sava-->
+                    <option value="Herzl 7">Herzl 7</option><!--Tel Aviv-Yafo-->
+					<option value="Begin 65">Begin 65</option><!--Rishon Lezion-->
+                    <option value="Bialik 78">Bialik 78</option><!--Petah Tikva-->
+                    <option value="Rothschild 22">Rothschild 22</option><!--Petah Tikva-->
+                    <option value="Sheinkin 93">Sheinkin 93</option><!--Rishon Lezion-->
+                    <option value="Allenbi 81">Allenbi 81</option><!--Tel Aviv-Yafo-->
+                    <option value="Bograshov 211">Bograshov 211</option><!--Tel Aviv-Yafo-->
+                    <option value="Ussishkin 5">Ussishkin 5</option><!--Rishon Lezion-->
+                    <option value="Ben Yehuda 34">Ben Yehuda 34</option><!--Jerusalem-->
+					<option value="Rachel Imenu 8">Rachel Imenu 8</option><!--Jerusalem-->
+					<option value="Azrieli mall hayam">Azrieli mall hayam</option><!--Eilat-->
 				</select>
 			</div>
 
 		</div>
 		<br><br>
-		<div class="branchListMap">
-			<div class="branchListContainer">
-				branch list
-			</div>
-			<br>
-			<div class="branchMapContainer">
-				branch map
-			</div>
-		</div>
+        <div class="branchListMap">
+            <div class="branchListContainer">
+                <ul class="list-group">
+					<button><li class="list-group-item list-group-item-action">An branch</li></button>
+					<button><li class="list-group-item list-group-item-action">A second branch</li></button>
+					<button><li class="list-group-item list-group-item-action">A third branch</li></button>
+					<button><li class="list-group-item list-group-item-action">A fourth branch</li></button>
+					<button><li class="list-group-item list-group-item-action">And a fifth branch</li></button>
+				  </ul>
+            </div>
+            <br>
+            <div class="branchMapContainer">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1wjqEldIwEQfmExl84xqq9jJh7LNgypM&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+        </div>
 	</section>
 
 	<!-- Footer -->
