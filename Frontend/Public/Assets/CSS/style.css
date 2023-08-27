@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -7,64 +7,60 @@
     max-width: 100%;
 }
 
-header,
-footer,
-section,
-nav {
-    display: block;
+header, footer, section, nav {
+	display: block;
 }
 
-body {
+body{
     background-color: rgb(250, 250, 250);
 }
 
-.material-icons {
+.material-icons{
     font-size: 40px;
     text-decoration: none;
     color: rgb(33, 32, 32);
     margin: 30px 40px
 }
 
-.material-icons:hover {
+.material-icons:hover{
     color: rgb(151, 151, 151);
 }
 
-.homeIcon {
+.homeIcon{
     float: left;
 }
 
-.bagIcon,
-.loginIcon,
-.logoutIcon,
-.settingsIcon,
-.infoIcon {
+.bagIcon,.loginIcon,.logoutIcon,.settingsIcon,.infoIcon{
     float: right;
 }
 
-.headersContainer {
+.headersContainer{
     padding: 120px 0 30px 0;
 }
 
-.introductionContainer,
-.mainContentContainer,
-.bestSellers,
-.discounts {
+.introductionContainer,.mainContentContainer,.bestSellers,.discounts{
     margin-top: 70px;
 }
 
-.shoesContainer,
-.about {
+.about{
     margin-top: 30px;
 }
 
-input {
+.shoesContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
     border-radius: 25px;
     border: 1px solid rgb(33, 32, 32);
     width: 300px;
     height: 40px;
 }
 
-.filtersContainer input {
+.filtersContainer input{
     display: inline;
     border-radius: 0;
     border: none;
@@ -72,85 +68,124 @@ input {
     height: auto;
 }
 
-nav {
+nav{
     word-spacing: 90px;
     color: aliceblue;
     background-color: rgb(33, 32, 32);
     padding: 80px 0;
 }
 
-nav li {
+nav li{
     display: inline;
 }
 
-nav li a {
+nav li a{
     font-size: 30px;
     text-decoration: none;
     color: aliceblue;
 }
 
-nav li a:hover {
+nav li a:hover{
     color: white;
     text-shadow: 0 2px 20px gray;
 }
 
-h1 {
+h1{
     font-size: 50px;
 }
 
-h2 {
+h2{
     font-size: 40px;
     margin: 20px 0;
 }
 
-ul {
+ul{
     list-style: none;
 }
 
-.filtersContainer {
+.filtersContainer{
     display: flex;
     margin: 40px 0 0 150px;
 }
 
-.filtersContainer div {
+.filtersContainer div{
     margin: 0 100px;
 }
 
-footer {
+footer{
     margin-top: 50px;
 }
 
-footer>div {
+footer >div{
     color: aliceblue;
     background-color: rgb(33, 32, 32);
     padding: 25px 0 25px 200px;
     display: flex;
 }
 
-#followUs {
+#followUs{
     margin-left: 200px;
 }
 
-#followUs li a {
+#followUs li a{
     font-size: 40px;
     text-decoration: none;
     color: blueviolet;
     margin: 10px 0;
 }
 
-#followUs li a:hover {
+#followUs li a:hover{
     color: white;
 }
 
-.statisticalData {
+.statisticalData{
     display: flex;
 }
 
-.statisticalData1,
-.statisticalData2 {
-    margin: 40px 0 40px 280px;
+.statisticalData1,.statisticalData2{
+    margin: 40px 0  40px 280px;
+}
+
+.branchListContainer{
+    padding: 0 200px;
+}
+
+.branchListContainer li{
+    background-color: rgb(183, 205, 205);
+}
+
+.branchListContainer button{
+    margin: 6px;
+}
+
+#sign-up-button{
+    margin-left: 90px;
 }
 
 
 
-.card>img {}
+
+
+
+
+
+body{
+    background-image: url(../Images/what-are-the-best-nike-basketball-shoes.jpg) !important;
+    background-size:100%;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::placeholder{
+    color: white !important; 
+}
+
+*{
+    color: white !important;
+}
