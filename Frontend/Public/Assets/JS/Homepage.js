@@ -60,7 +60,9 @@ fetch('http://localhost:3000/products')
             const button = document.createElement('button');
             button.className= 'cardButton btn btn-outline-primary';
             button.addEventListener('click',function(){
+                if(localStorage.length > 0){
                 localStorage.setItem(product._id, JSON.stringify(product));
+                }
             })
             button.textContent= 'Add to shopping cart';
 
