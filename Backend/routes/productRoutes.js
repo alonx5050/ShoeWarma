@@ -3,9 +3,10 @@ const productController = require('../controllers/productController')
 const router = express.Router();
 
 
-router.route('/')
-    .get(productController.getAllProducts)
-    .post(productController.createProduct);
+router.get('/', productController.getAllProducts, (req, res) => {
+    const products = res.locals.products; // Retrieve products from res.locals
+    res.render('Homepage', { products });
+});
 
 
 
