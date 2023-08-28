@@ -1,0 +1,68 @@
+import { addProduct } from '../ajax/addProduct.js';
+
+function renderProducts(products) {
+  const cardContainer = document.getElementsByClassName('card-body');
+  cardContainer.innerHTML = '';
+  let currentCardGroup = null;
+  let j = 0;
+  const id = [];
+  products.forEach((product, index) => {
+    const name = product.name;
+    const brand = product.brand;
+    const color = product.color
+    const size = product.price;
+    const price = product.price;
+    const frontImage = `Assets/Images/${product.frontImage}`;
+
+
+    const card = `
+    <div class="card">
+    <div class="card-body">
+      <img
+        id="product-img-${index}"
+        src="${frontImage}"
+        style="margin-left: 0px; height: 150px; width: 200px"
+      />
+      <h3 class="text-center card-title" id="product-company-${index}">
+        ${brand}
+      </h3>
+      <h4 class="text-center card-title" id="product-name-${index}">
+        ${name}
+      </h4>
+      <h4 class="text-center" id="product-price-${index}">${price}$</h4>
+      <h5 id="product-size-${index}">size ${product.size}</h5>
+      <div class="filter">
+      </div>
+      <button
+        class="btn btn-primary"
+        id="add-${index}"
+        type="button"
+        style="margin-left: 14px"
+      >
+        add to cart
+      </button>
+    </div>
+  </div>`;
+
+    if (index % 4 === 0) {
+      currentCardGroup = document.createElement('div');
+      currentCardGroup.classList.add('card-group');
+      cardContainer.appendChild(currentCardGroup);
+    }
+
+    if (currentCardGroup) {
+      currentCardGroup.innerHTML += card;
+    }
+    j++;
+    id.push(product._id);
+  });
+
+  for (let i = 0; i < j; i++) {
+    $(`#add-${i}`).click(function (e) {
+      e.preventDefault();
+      addProduct(e, id[i]);
+    });
+  }
+}
+
+export { renderProducts };
