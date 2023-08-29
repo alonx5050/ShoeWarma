@@ -69,3 +69,45 @@ var typeGraph = new Chart(document.getElementById('typeGraph').getContext('2d'),
 //////////////////////////////////////////////
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const purchasedProducts = JSON.parse(localStorage.getItem('purchasedProducts'));
+    const ordersHistory = document.getElementById('ordersHistory');
+    ordersHistory.className = 'row row-cols-4 g-4';
+
+
+    if (purchasedProducts && purchasedProducts.length > 0) {
+        purchasedProducts.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'purchasedProductCard col card h-100 card-body';
+
+
+            const image = document.createElement('img');
+            image.src = 'Assets/Images/' + product.frontImage;
+            image.alt = product.name;
+
+
+            const productName = document.createElement('h4');
+            productName.textContent = product.name;
+
+            const price = document.createElement('p');
+            price.textContent = `Price: $${product.price}`;
+
+            // Append elements to the product card
+            productCard.appendChild(image);
+            productCard.appendChild(productName);
+            productCard.appendChild(price);
+
+
+            // Append the product card to the orders history section
+            ordersHistory.appendChild(productCard);
+
+        });
+    } else {
+        const noProductsMessage = document.createElement('p');
+        noProductsMessage.textContent = "No purchased products available.";
+        ordersHistory.appendChild(noProductsMessage);
+    }
+});
+
+
+
