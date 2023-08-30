@@ -113,3 +113,45 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 });
+
+
+$('#addProductButton').click(function () {
+    // Open the add product modal
+    $('#addProductModal').modal('show');
+});
+
+$('#addProductSubmit').click(function () {
+    const productName = $('#productName').val();
+    const productBrand = $('#productBrand').val();
+    const productColor = $('#productColor').val();
+    const productSize = $('#productSize').val();
+    const productPrice = $('#productPrice').val();
+
+    // Create the product object
+    const productData = {
+        brand: productBrand,
+        color: productColor,
+        name: productName,
+        price: productPrice,
+        size: productSize,
+
+
+        // Add other fields here
+    };
+
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/products', // 
+        data: JSON.stringify(productData),
+        contentType: 'application/json',
+        success: function (data) {
+            // Handle success, e.g., close the modal and refresh product list
+            $('#addProductModal').modal('hide');
+            // Refresh products or update the UI as needed
+        },
+        error: function (error) {
+            console.error('Error adding product:', error);
+            // Handle error, e.g., display an error message
+        },
+    });
+});
