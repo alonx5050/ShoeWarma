@@ -13,7 +13,7 @@ Welcome to ShoeWarma repository! This is a web application developed as part of 
 
 The ShoeWarma offers the following features:
 
-1. ShoeWarma Shop: Browse and purchase surf-related products.
+1. ShoeWarma Shop: Browse and purchase shoes.
 2. Shop Cart: Add items to your cart, view the cart, and proceed to checkout.
 5. ShoeWarma Branches: Engage in real-time to see ShoeWarma stores all over the countrey.
 6. Login: log in, and manage your profile information.
