@@ -175,6 +175,15 @@ footer >div{
     margin-left: 90px;
 }
 
+.order-summary-form {
+    display: none;
+    padding: 20px;
+    background-color: #464343;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 
 
 
