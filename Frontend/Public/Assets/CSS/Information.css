@@ -1,0 +1,55 @@
+.graphs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+/* Position the h4 at the top of the graph container */
+.graph-container h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    /* Add padding to create space below the title */
+    margin: 0;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add a semi-transparent background */
+}
+
+/* Adjust the margin to create space between title and graph */
+.graph-container {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    margin: 40px 20px;
+    /* Adjust the top margin to create a gap */
+    padding-top: 40px;
+    /* Add padding to move the graph down */
+    vertical-align: top;
+    position: relative;
+}
+
+.noProductsMessage{
+    width: 100%;
+ }
+
+
+
+/* .orders-history {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.orders-history h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.square {
+    width: 280px;
+    height: 280px;
+    background-color: lightgray;
+} */
