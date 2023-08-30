@@ -41,9 +41,42 @@
 	</nav>
 
 	<section class="mainContentContainer" id="container">
+		<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<input type="text" id="productName" placeholder="Product Name" class="form-control">
+						<input type="text" id="productBrand" placeholder="Brand" class="form-control">
+						<input type="text" id="productColor" placeholder="Color" class="form-control">
+						<input type="text" id="productSize" placeholder="Size" class="form-control">
+						<input type="text" id="productPrice" placeholder="Price" class="form-control">
+
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" id="addProductSubmit">Add Product</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
 		<button id="showUsersButton" class="btn btn-primary">Show Users</button>
 		<button id="showProductsButton" class="btn btn-primary">Show Products</button>
-		
+		<button id="addProductButton" class="btn btn-success">Add Product</button>
 		<div id="userList"></div>
 
 	</section>
