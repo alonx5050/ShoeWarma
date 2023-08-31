@@ -1,4 +1,4 @@
-# ShoeWarma  <img align="center" src="https://github.com/alonx5050/ShoeWarma/blob/main/Frontend/Public/Assets/Images/ShoeWarmaLogoNoBackground.png?raw=true"  width="70" height="70" />
+# ShoeWarma  <img align="center" src="https://github.com/alonx5050/ShoeWarma/blob/main/Frontend/Public/Assets/Images/ShoeWarmaLogoNoBackground.png?raw=true"  width="100" height="100" />
 
 Welcome to ShoeWarma repository! This is a web application developed as part of the final project for the Web Application Development course. ShoeWarma is an online store that sells top brands shoes and provides additional features such as a shopping cart, Google API Map integration, web sockets, etc. This README.md file provides an overview of the project, its features, and instructions for running and contributing to the project.
 
