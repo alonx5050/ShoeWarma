@@ -5,11 +5,11 @@ Welcome to ShoeWarma repository! This is a web application developed as part of 
 
 ## Collaborators
 
-[Alon Segev](https://github.com/alonx5050)
+- [Alon Segev](https://github.com/alonx5050)
 
-[Shlomi Karavani](https://github.com/shlomi90)
+- [Shlomi Karavani](https://github.com/shlomi90)
 
-[Roee Shemesh](https://github.com/RoeeShemesh)
+- [Roee Shemesh](https://github.com/RoeeShemesh)
 
 
 ## Table of Contents <img align="right" src="https://github.com/alonx5050/ShoeWarma/blob/main/Frontend/Public/Assets/Images/ShoeWarmaLogoNoBackground.png?raw=true"  width="200" height="200" />
